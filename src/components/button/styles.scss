@@ -1,0 +1,31 @@
+@import './../../assets/pallette.module.scss';
+
+a {
+  button {
+    border: $primary-dark 2px dashed;
+    color: $primary-dark;
+    padding: 16px 32px;
+    border-radius: 50px;
+    transition: 0.6s;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    background: transparent;
+    transition: none;
+    &:hover {
+      border: 2px solid $primary-dark;
+      text-decoration: underline;
+    }
+  }
+}
+
+.dark-mode {
+  a {
+    button {
+      border: $primary-light 2px dashed;
+      color: $primary-light;
+      &:hover {
+        border: 2px solid $primary-light;
+      }
+    }
+  }
+}
