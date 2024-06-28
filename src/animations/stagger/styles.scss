@@ -1,0 +1,30 @@
+@import './../../assets/pallette.module.scss';
+
+.container {
+  background: transparent;
+  max-width: 100px;
+  display: grid;
+  overflow: hidden;
+  list-style: none;
+  grid-template-rows: repeat(auto, 1fr);
+  gap: 2rem;
+  padding: 0.75rem;
+  border-radius: 50px;
+  margin: 2rem 0;
+  .item {
+    background: $primary-dark;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+}
+
+.dark-mode {
+  .container { 
+    background: $primary-dark;
+    .item  {
+      background: $primary-light;
+    }
+  }
+}
